@@ -1,0 +1,15 @@
+<navbar id="header"></navbar>
+<div id="body">
+    <div class="header">
+        <div class="contact">
+            <h1>Create New Contact</h1>
+            <form name="contactForm" ng-submit="vm.save(contactForm)" novalidate>
+                <input type="text" name="Name" value="Name" ng-model="vm.contact.name" placeholder="Name">
+                <input type="text" name="Phone" value="Phone" ng-model="vm.contact.phone" placeholder="Phone">
+                <input type="text" name="Address" value="Address" ng-model="vm.contact.address" placeholder="Address">
+                <input type="submit" value="Add" id="submit" >
+            </form>
+        </div>
+    </div>
+</div>
+<footer></footer>

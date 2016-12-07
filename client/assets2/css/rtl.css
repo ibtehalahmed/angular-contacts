@@ -1,0 +1,124 @@
+body {
+  direction: rtl;
+}
+
+.hgroup-sidebar {
+  text-align: left;
+}
+
+.gnav-header .search-input-wrapper #search-query {
+  border-left: none;
+  border-right: 1px solid #CFCBC8;
+  border-radius: 0 9px 9px 0;
+  background: #ffffff;
+}
+
+.gnav-header .search-button-wrapper .btn-primary {
+  border-radius: 9px 0 0 9px !important;
+  border-right: none;
+  border-left: 1px solid #CFCBC8;
+}
+
+.customer_service_logo {
+
+}
+
+.flipImage {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.nav-align {
+  text-align: left;
+}
+.txt-align-r {
+  text-align: right !important;
+}
+.nav-float-r {
+  float: left;
+}
+
+.nav-float-l {
+  float: right;
+}
+
+.padding-r-10 {
+  padding-left: 10px;
+  padding-right: 0 !important;
+}
+.margin-r-40 {
+  margin-right: 0px !important;
+  margin-left: 40px !important;
+}
+.product_item{
+  margin-right: -332px;
+  margin-left: -30px;
+}
+.feature_txt,.blog_section{
+  margin-right: -315px;
+  margin-left: 0px;
+}
+.owl-item{
+  float: right !important;
+}
+.thumb-wrapper{
+  float: right !important;
+  margin-right: 0px !important;
+}
+.product-title,.price{
+
+  float: left !important;
+}
+div.product div.images div.thumbnails a{
+  float: right !important;
+}
+.star-rating span{
+  right: 0px;
+}
+.product_title{
+  text-align: right !important;
+}
+.cat-count{
+  float: left !important;
+}
+.slider-navi .prev{
+  background-position: right top;
+}
+.slider-navi .next{
+  background-position: left top;
+}
+.padding-r-5{
+  padding-right: 0!important;
+  padding-left: 5%;
+}
+.padding-r-0{
+  padding-left: 0px !important;
+  padding-right: 15px !important;
+}
+.main-banner-bg-padding{
+  padding: 0 0 0 0 !important;
+}
+.main-banner-sm-padding{
+  padding: 0 0 0 45px !important;
+}
+.widget.pt-socials-widget ul.inline-mode li{
+  float: right;
+}
+.figure.banner-with-effects.blue-button .left.bottom{
+  left: 1em!important;
+}
+#showloginDialog{
+  left: 15px;
+  right: auto !important;
+  text-align: right;
+}
+.figure.banner-with-effects .left.bottom{
+  left: 1em !important;
+}
+.margin-r-0 {
+  margin-right: 0px;
+}

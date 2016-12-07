@@ -1,0 +1,38 @@
+<navbar  id="header"></navbar>
+<!--
+
+-->
+
+<div id="body">
+    <div class="header">
+        <div class="contact">
+            <h1>Register</h1>
+            <h2>Make an account now for free</h2>
+            <form name="form" ng-submit="vm.register(form)" novalidate>
+                <div ng-class="{ 'has-success': form.firstName.$valid && (form.$submitted || form.firstName.$touched),
+                                            'has-error': form.firstName.$invalid && (form.$submitted || form.firstName.$touched) }">
+                    <input type="text" name="firstName" value="firstName" ng-model="vm.user.firstName"
+                           required  placeholder="firstName" >
+                    <p class="help-block"
+                       ng-show="(form.$submitted || form.firstName.$touched)&&form.firstName.$error.required">
+                        FirstName is required
+                    </p>
+                </div>
+
+
+               <input type="text" name="Email Address" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
+                <input type="text" name="Subject" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
+                <textarea name="message" cols="50" rows="7">Message</textarea>
+                <input type="submit" value="Send" id="submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<footer></footer>

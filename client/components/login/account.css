@@ -1,0 +1,135 @@
+.checkbox {
+  width: auto !important;
+}
+
+div.hr {
+  border-top: thin solid black;
+  float: left;
+  width: 47%;
+  height: 20px;
+  margin-top: 24px;
+}
+.not_a_member{
+  font-size: small;
+  margin-top: 5px;
+  margin-left: 11px;
+  vertical-align: middle;
+}
+.forget_password{
+  padding-left: 40px;
+  float: right;
+}
+div.or_ {
+  float: left;
+  margin-bottom: 10px;
+  height: 20px;
+  margin-top: 15px;
+}
+
+.registrationForm input[type='text'] {
+  width: 100%;
+}
+.active-log-reg-tab {
+  background-color: white;
+}
+
+.deactive-log-reg-tab {
+  background-color: rgb( 242, 242, 242 );
+  border-bottom: 1px solid rgb( 231, 231, 231 );
+  border-left: 1px solid rgb( 231, 231, 231 );
+  cursor: pointer;
+}
+
+.log-reg-tab {
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -40px;
+  height: 40px;
+  width: 40%;
+  line-height: 2.5;
+}
+.sign_in_BG {
+  border-width: 1px;
+  border-color: rgb( 199, 199, 199 );
+  border-style: solid;
+  border-radius: 2px;
+  background-color: rgb( 255, 255, 255 );
+  width: 598px !important;
+  height: 450px;
+  z-index: 6;
+}
+.sgin_in_header_BG {
+  border-width: 1px;
+  border-color: rgb( 199, 199, 199 );
+  border-style: solid;
+  border-radius: 2px;
+  background-color: rgb( 242, 242, 242 );
+  width: 596px;
+  height: 99px;
+}
+.Rectangle_sign_in {
+  border-width: 1px;
+  border-color: rgb( 231, 231, 231 );
+  border-style: solid;
+  background-color: rgb( 255, 255, 255 );
+  width: 200px;
+  height: 39px;
+}
+.Sign_In_txt {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb( 94, 93, 93 );
+  text-align: center;
+}
+.Rectangle_Register {
+  border-width: 1px;
+  border-color: rgb( 231, 231, 231 );
+  border-style: solid;
+  background-color: rgb( 242, 242, 242 );
+  width: 196px;
+  height: 39px;
+  float: right;
+}
+.Register_txt {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb( 94, 93, 93 );
+  text-align: center;
+}
+
+.OR {
+  width: 1920px;
+  height: 4653px;
+}
+.OR_font {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb( 94, 93, 93 );
+  text-align: center;
+}
+.Rounded_Rectangle_Or {
+  border-width: 1.333px;
+  border-color: rgb( 199, 199, 199 );
+  border-style: solid;
+  background-color: rgb( 255, 255, 255 );
+  width: 398.334px;
+  height: 0.334px;
+}
+.Rounded_Rectangle_textbox {
+  border-width: 1.333px;
+  border-color: rgb( 199, 199, 199 );
+  border-style: solid;
+  border-radius: 2px;
+  background-color: rgb( 255, 255, 255 );
+  width: 398.334px;
+  height: 36.334px;
+}
+.sign-in{
+  margin-left: 60px;
+}
+.reg{
+  margin-left: 10px;
+}
+.modal-dialog{
+  width: 700px;
+}

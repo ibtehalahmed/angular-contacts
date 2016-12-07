@@ -1,0 +1,247 @@
+<div class="modal fade " tabindex="-1" role="dialog" id="loginDialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body">
+
+        <div ng-init="vm.activeTab=1" class="row">
+          <div ng-click="vm.activeTab=1"
+               ng-class="{'active-log-reg-tab':(vm.activeTab===1),'deactive-log-reg-tab':(vm.activeTab!==1)}"
+               class="col-md-3 log-reg-tab sign-in">
+            {{'nav.sign_in'|translate}}
+          </div>
+          <div ng-click="vm.activeTab=0"
+               ng-class="{'active-log-reg-tab':(vm.activeTab===0),'deactive-log-reg-tab':(vm.activeTab!==0)}"
+               class=" col-md-3 log-reg-tab reg">
+           {{'nav.registration'|translate}}
+          </div>
+        </div>
+
+        <div class="row " ng-show="vm.activeTab===0">
+          <div class="col-md-10 col-md-offset-1">
+            <oauth-buttons classes="btn-block"  mode="reg"></oauth-buttons>
+
+
+            <div class="hr"></div>
+            <div class="or_">&nbsp;{{'nav.or'|translate}}&nbsp; </div>
+            <div class="hr"></div>
+            <form class="form registrationForm" name="form" ng-submit="vm.register(form)" novalidate>
+
+
+              <div class="form-inline row">
+
+                <div class="form-group col-md-6" ng-class="{ 'has-success': form.firstName.$valid && (form.$submitted || form.firstName.$touched),
+                                            'has-error': form.firstName.$invalid && (form.$submitted || form.firstName.$touched) }">
+                  <label class="sr-only">{{'account.first_name'| translate}}</label>
+                  <input type="text" name="firstName" class="form-control" ng-model="vm.user.firstName"
+                         placeholder="{{'account.first_name'| translate}}"
+                         required/>
+
+                  <p class="help-block"
+                     ng-show="(form.$submitted || form.firstName.$touched)&&form.firstName.$error.required">
+                    {{'account.firstName_is_required'|translate}}
+                  </p>
+                </div>
+                <div class="form-group col-md-6" ng-class="{ 'has-success': form.lastName.$valid && (form.$submitted || form.lastName.$touched),
+                                            'has-error': form.lastName.$invalid && (form.$submitted || form.lastName.$touched) }">
+                  <label class="sr-only">{{'account.last_name'| translate}}</label>
+                  <input type="text" class="form-control" name="lastName"
+                         placeholder="{{'account.last_name'| translate}}"
+                         ng-model="vm.user.lastName" required>
+
+                  <p class="help-block"
+                     ng-show="(form.$submitted || form.lastName.$touched)&&form.lastName.$error.required">
+                    {{'account.lastName_is_required'|translate}}
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <div class="checkbox">
+                    <label>
+                      <input type="radio" name="gender" required ng-model="vm.user.gender" ng-value="1">
+                      {{'account.gender_male'|translate}}
+                    </label>
+                  </div>
+                </div>
+
+                <div class=" col-sm-4">
+                  <div class="checkbox">
+                    <label>
+                      <input type="radio" name="gender" required ng-model="vm.user.gender" ng-value="2">
+                      {{'account.gender_female'|translate}}
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="row">
+                <div class="form-group" ng-class="{ 'has-success': form.email.$valid && form.$submitted,
+                                            'has-error': (form.$submitted || form.email.$touched)&&(form.email.$error.email|| form.email.$error.required || vm.errors.email) }">
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" name="email" placeholder="{{'account.email'|translate}}"
+                           ng-model="vm.user.email" ng-change="vm.onEmailChange(form)"
+                           required>
+
+                    <p class="help-block"
+                       ng-show="(form.$submitted || form.email.$touched)&&form.email.$error.required">
+                      {{'account.email_is_required'|translate}}</p>
+
+
+                    <p class="help-block"
+                       ng-show="vm.errors.email">
+                      {{vm.errors.email}}</p>
+
+                    <p class="help-block"
+                       ng-show="(form.$submitted || form.email.$touched)&&form.email.$error.email">
+                      {{'account.enter_valid_mail'|translate}}</p>
+                  </div>
+                </div>
+
+
+                <div class="form-group" ng-class="{ 'has-success': form.password.$valid && (form.$submitted || form.password.$touched),
+                                            'has-error': form.password.$invalid && (form.$submitted || form.password.$touched) }">
+                  <div class="col-sm-12">
+                    <input type="password" class="form-control" name="password"
+                           placeholder="{{'account.password'|translate}}" required
+                           ng-model="vm.user.password">
+
+
+                    <p class="help-block"
+                       ng-show="(form.$submitted || form.password.$touched)&&form.password.$error.required">
+                      {{'account.password_is_required'|translate}}</p>
+                  </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-success': form.cPassword.$valid && (form.$submitted || form.cPassword.$touched),
+                                            'has-error': form.cPassword.$invalid && (form.$submitted || form.cPassword.$touched) }">
+                  <div class="col-sm-12">
+                    <input type="password" class="form-control" name="cPassword"
+                           placeholder="{{'account.confirm_password'|translate}}" required
+                           ng-model="vm.user.cPassword" match="vm.user.password">
+
+                    <p class="help-block"
+                       ng-show="(form.$submitted || form.cPassword.$touched)&&form.cPassword.$error.required">
+                      {{'account.cPassword_is_required'|translate}}</p>
+
+                    <p class="help-block"
+                       ng-show="form.cPassword.$error.match && (form.$submitted || form.cPassword.$touched)">
+                      {{'account.password_must_match'|translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" ng-model="vm.user.newsletterSubscription" style="margin-top: 5px">
+                    <span style="font-size: 14px">{{'nav.arzaq_news_letters'|translate}} </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class=" col-md-12">
+                  <span style="font-size: 12px">{{'nav.terms_conditions'|translate}}</span>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <button class="btn btn-lg btn-primary col-md-8" type="submit" ng-disabled="!form.$valid || vm.isLogging">{{'nav.register'|translate}}
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="row" ng-show="vm.activeTab===1">
+          <div class="col-md-10 col-md-offset-1">
+            <oauth-buttons classes="btn-block"></oauth-buttons>
+
+
+            <div class="hr" style="border-color: rgb( 199, 199, 199 )"></div>
+            <div class="or_" style="font-size:12px;  color: rgb( 94, 93, 93 );">&nbsp;{{'nav.or'|translate}}&nbsp; </div>
+            <div class="hr" style="border-color: rgb( 199, 199, 199 )"></div>
+
+
+            <form novalidate="" name="rForm" class="ng-pristine ng-valid" ng-submit="vm.login(rForm)">
+
+              <div class="form-horizontal " ng-class="{ 'has-success': rForm.email.$valid && rForm.$submitted,
+                                            'has-error': (rForm.$submitted || rForm.email.$touched)&&(rForm.email.$error.required || rForm.email.$error.email ) }">
+
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" name="email" placeholder="{{'nav.email'|translate}}" ng-model="vm.user.email"
+                           required>
+
+
+                    <p class="help-block"
+                       ng-show="(rForm.$submitted || rForm.email.$touched)&&rForm.email.$error.required">
+                      {{'account.email_is_required'|translate}}</p>
+
+                    <p class="help-block"
+                       ng-show="(rForm.$submitted || rForm.email.$touched)&&rForm.email.$error.email">
+                      {{'account.enter_valid_mail'|translate}}</p>
+                  </div>
+                </div>
+
+                <div class="form-group " ng-class="{ 'has-success': rForm.password.$valid && (rForm.$submitted || rForm.password.$touched),
+                                            'has-error': rForm.password.$invalid && (rForm.$submitted || rForm.password.$touched) }">
+                  <div class="col-sm-12">
+                    <input type="password" class="form-control" name="password" placeholder="{{'nav.password'|translate}}"
+                           ng-model="vm.user.password" required>
+
+
+                    <p class="help-block"
+                       ng-show="(rForm.$submitted || rForm.password.$touched) && rForm.password.$error.required">
+                      {{'account.password_is_required'|translate}}</p>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+                  <button style="border-radius: 0px; width: 100%;" type="submit"
+                          class="btn btn-newsleter_footer">{{'nav.sgin_in'|translate}}
+                  </button>
+                  <div class="form-group " ng-class="{'has-error':vm.errors.other}">
+                    <p class="help-block" ng-show="vm.errors.other">
+                      {{vm.errors.other}}
+                    </p>
+                  </div>
+
+
+                  <div style="font-size: small;margin-top: 5px;">{{'nav.not_a_member_yet?'|translate}}
+                    <a ng-click="vm.activeTab=0" style="padding-left: 51px;color: #c2d44e;">{{'nav.sgin_up'|translate}}</a>
+                  </div>
+                </div>
+
+                <div class="col-md-3"></div>
+
+              </div>
+
+
+            </form>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+

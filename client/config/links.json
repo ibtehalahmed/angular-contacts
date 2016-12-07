@@ -1,0 +1,82 @@
+{
+  "social_network": [
+    {
+      "icon": "fa-facebook",
+      "title": {"ar-eg":"تابعنا على فيسبوك","en-us":"Connect us on Facebook"},
+      "link": "https://www.facebook.com/ArzaqStores"
+    },
+    {
+      "icon": "fa-twitter",
+      "title": {"ar-eg":"تابعنا على تويتر","en-us":"Connect us on Twitter"},
+      "link": "www.Twitter.com"
+    },
+    {
+      "icon": "fa-instagram",
+      "title": {"ar-eg":"تابعنا على إنستجرام","en-us":"Connect us on Instagram"},
+      "link": "www.instagram.com"
+    },
+    {
+      "icon": "fa-youtube-play",
+      "title": {"ar-eg":"تابعنا على اليوتيوب","en-us":"Connect us on YouTube"},
+      "link": "www.youtube.com"
+    },
+    {
+      "icon": "fa-google-plus",
+      "title": {"ar-eg":"تابعنا على جوجل بلس","en-us":"Connect us on Google"},
+      "link": "plus.google.com"
+    }
+  ],
+  "main_menu": [
+    {
+      "title":{ "ar-eg": "الرئيسية","en-us":"Home"},
+
+      "link": "/",
+      "active":true
+    },
+    {
+      "title": {"ar-eg":"المتاجر","en-us":"Shop"},
+      "link": "/shop-view/me",
+      "active":false
+    },
+    {
+      "title": {"ar-eg":"المدونة","en-us":"Blog"},
+      "link": "/blog",
+      "active":false
+    },
+    {
+      "title": {"ar-eg":"الصفحات","en-us":"Page"},
+      "link": "/page",
+      "active":false
+    },
+    {
+      "title": {"ar-eg":"الباعة","en-us":"Vendors"},
+      "link": "/vendors",
+      "active":false
+    }
+
+  ,
+    {
+      "title": {"ar-eg":"تدوينات جديدة","en-us":"New Posts"},
+      "link": "/posts",
+      "active":false
+    }
+  ,
+    {
+      "title": {"ar-eg":"المنتجات","en-us":"Products"},
+      "link": "/products",
+      "active":false
+    }
+  ,
+    {
+      "title": {"ar-eg":"المميزات","en-us":"Features"},
+      "link": "/features",
+      "active":true
+    }
+  ,
+    {
+      "title": {"ar-eg":"تواصل معنا", "en-us":"Contact Us"},
+      "link": "/contactus",
+      "active":true
+    }
+  ]
+}

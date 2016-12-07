@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="../../assets2/css/bootstrap-rtl.min.css" type="text/css" ng-if="!nav.lang">
+<link rel="stylesheet" href="../../assets2/css/rtl.css" type="text/css" ng-if="!nav.lang">
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a ng-hide="nav.isLoggedIn()" ng-click="nav.login()">
+                        <i class="Sign_in"
+                           style="background-image: url('../assets2/css/images/sign_in.png');padding-right: 20px;"></i>
+                        {{'account.login'| translate}}
+                    </a>
+
+
+                    <a ng-show="nav.isLoggedIn()" ng-click="nav.showLogin()"
+                       ng-class="{'showloginDialogButtonVis' : nav.toggle}">
+                        <i class="Sign_in"
+                           style="background-image: url('../assets2/css/images/sign_in.png');padding-right: 20px;"></i>
+                        {{'nav.Hello'| translate}} {{nav.userName}}
+                    </a>
+
+
+
+
+                    <div id="showloginDialog" style="display: none;" class="txt-align-r">
+                        <div class="row" style="padding-top: 10px;margin: 0px">
+                            <div class="col-md-5 col-xs-5" style="padding-left: 5px;padding-right: 5px">
+                                <div class="row" style="padding-left: 0px;margin: 0px">
+                                    <img ng-src="{{nav.currentUser.pictureUrl}}" width="80px" height="80px"
+                                         style="padding: 5px;min-width: 100%;margin-bottom: 2px" class="thumbnail">
+                                </div>
+                                <!--<div class="row" style="margin: 0 0 0 10px">
+                                  <a href="/profile-edit" style="font-size: 12px">{{'nav.show_profile'| translate}}</a>
+                                </div>-->
+                            </div>
+                            <div class="col-md-7 col-xs-7" style="padding: 0px 5px 0px 5px">
+                                <div class="row" style="padding-left: 0px;margin: 0px;font-size: 16px">
+                                    {{nav.currentUser.firstName}}
+                                    <br>
+                                    {{nav.currentUser.lastName}}
+                                </div>
+                                <div class="row" style="padding-left: 0px;margin: 0px;font-size: 10px;font-weight: normal">
+                                    {{nav.userName}}
+                                </div>
+                                <div class="row" style="padding-left: 0px;margin: 0px;">
+                                    <a href="#">
+                                        <i class="fa fa-user" style="color: #888888"></i>
+                                    </a>
+                                    <a href="/profile-edit" style="margin-left: 5px">
+                                        <i class="fa fa-pencil" style="color: #888888"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="margin-top: 5px;margin-bottom: 0">
+                        <div class="row" style="padding-top: 10px;margin: 0px">
+                            <div class="col-md-12 col-xs-12" style="padding: 0px 5px 0px 10px">
+                                <a href="/my-sales">{{'nav.my_sales'| translate}}</a>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 10px;margin: 0px">
+                            <div class="col-md-12 col-xs-12" style="padding: 0px 5px 0px 10px">
+                                <a href="/myorders">{{'nav.my_orders'| translate}}</a>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 10px;margin: 0px">
+                            <div class="col-md-12 col-xs-12" style="padding: 0px 5px 0px 10px">
+                                <a href="/profile-edit">{{'nav.account_settings'| translate}}</a>
+                            </div>
+                        </div>
+                        <hr style="margin-top: 5px;margin-bottom: 0">
+                        <div class="row" style="padding: 5px 0 0 25px;">
+                            <a href="#" ui-sref="logout">
+                                <i class="fa fa-power-off" style="color: #888888"></i>
+                                {{'account.logout'| translate}}</a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>

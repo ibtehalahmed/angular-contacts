@@ -1,0 +1,226 @@
+{
+    "userProfile": {
+        "picture": "صورة",
+        "name": "الإسم ",
+        "name_must_Correct": "برجاء تصحيح الإسم  ",
+        "firstName": "الإسم الأول ",
+        "firstName_must_Correct": " برجاء تصحيح الإسم الأول  ",
+        "lastName": " الإسم الأخير ",
+        "lastName_must_Correct": "برجاء تصحيح الإسم الأخير ",
+        "male": "ذكر",
+        "female": "أنثى",
+        "gender_must_Correct": "برجاء تصحيح النوع ",
+        "country": {
+            "name": "الإسم"
+        },
+        "selectCountry": "إختر البلد ",
+        "country_must_Correct": "برجاء تصحيح البلد",
+        "city": {
+            "name": "الإسم"
+        },
+        "selectCity": "إختر المدينة ",
+        "city_must_Correct": "برجاء تصحيح المدينة ",
+        "phone": "الهاتف",
+        "phone_must_Correct": "برجاء تصحيح الهاتف",
+        "birthday": "تاريخ الميلاد",
+        "birthday_must_Correct": "برجاء تصحيح تاريخ الميلاد "
+    },
+  "action": {
+    "customer":"العميل",
+    "reports": "تقارير",
+    "create": "انشاء حركه جديده",
+    "date":  "التاريخ",
+    "date_must_correct": "برجاء ادخال التاريخ",
+    "type":"نوع الحركه",
+    "select_type":"اختر نوع الحركه",
+    "type_must_Correct":"برجاء اختيار نوع الحركه",
+    "customer_name":"اسم العميل",
+    "customer_name_must_correct": "برجاء ادخال اسم العميل",
+    "notes": "ملاحظات",
+    "value": "القيمه",
+    "value_must_correct": "برجاء ادخال القيمه الصحيحه",
+    "action_has_been_created_successfully": "تم انشاء حركه جديده بنجاح",
+    "EGP":"جنيه",
+    "charge": "الرصيد"
+  },
+  "customer": {
+      "name": "الإسم",
+      "address":"العنوان",
+      "phone":"رقم الهاتف",
+      "options":"خيارات",
+      "details": "التفاصيل",
+      "update": "تعديل",
+      "delete": "مسح",
+      "new_customer":"عميل جديد",
+      "name_must_correct":"برجاء ادخال الاسم",
+      "phone_must_correct":"برجاء ادخال رقم الهاتف",
+      "address_must_correct":"برجاء ادخال العنوان",
+      "create":"انشاء عميل جديد",
+      "edit":"حفظ التغييرات"
+  },
+    "general": {
+        "save_changes": "حفظ التغيرات",
+        "save_address": "حفظ العنوان",
+        "back": "رجوع",
+        "myfavorites": "",
+        "Preview": "معاينة",
+        "createProduct": "إنشاء منتج جديد",
+        "updateProduct": "تحديث",
+        "select": "إختيار",
+        "delete": "حذف",
+        "rating": "رتبة التصنيف",
+        "comment": "تعليق",
+        "addComment": "أضف تعليق",
+        "reviewInvoices": "مراجعة الفاتورة",
+        "myorders": "طلباتي",
+        "previous": "السابق",
+        "next": "التالي",
+        "listIsEmpty": "القائمة فارغة",
+        "save": ""
+    },
+    "{{$select": {
+        "selected": {
+            "name\n                    |localize}}": "",
+            "name|localize}}": "",
+            "name}}": "الإسم",
+            "text}}": "النص",
+            "value}}": "القيمة"
+        }
+    },
+    "profile": {
+        "myprofile": "",
+        "profile": ""
+    },
+    "account": {
+        "change_password": "تغيير كلمة السر ",
+        "current_password": "كلمة السر الحالية ",
+        "new_password": "كلمة السر الجديدة",
+        "password_roles": "كلمة السر لابد أن لا تقل عن 3 أحرف",
+        "confirm_new_password": "تأكيد كلمة السر ",
+        "password_must_match": "كلمة السر يجب أن تكون متطابقة",
+        "first_name": "الإسم الأول",
+        "firstName_is_required": "يجب إدخال الإسم الأول",
+        "last_name": "الإسم الأخير",
+        "lastName_is_required": "يجب إدخال الإسم الأخير ",
+        "gender_male": "ذكر ",
+        "gender_female": "أنثى",
+        "email": "البريد الإلكتروني",
+        "email_is_required": "برجاء إدخال البريد الإلكتروني",
+        "enter_valid_mail": "برجاء إدخال بريد إلكتروني صحيح",
+        "password": "كلمة السر",
+        "password_is_required": "يجب إدخال كلمة السر ",
+        "confirm_password": "تأكيد كلمة السر ",
+        "cPassword_is_required": "برجاء تأكيد كلمة السر ",
+        "login": "تسجيل الدخول ",
+        "logout": "تسجيل الخروج"
+    },
+    "main": {
+        "bestSellers":  "الأكثر مبيعا",
+        "new_features": "منتجات مميزة",
+        "catTreeTitle": "المواد المستخدمة",
+        "more": "",
+        "best_sellers": "الأكثر مبيعا",
+        "specialOffers":  "عروض مميزة"
+    },
+    "search": {
+      "search_placeholder":"بحث",
+      "details":"تفاصيل",
+        "zeroProductsFound": "لا يوجد منتجات",
+        "moreProducts": "المزيد",
+        "noMoreProducts": "لا يوجد منتجات اخرى"
+    },
+    "category": {
+        "sortedBy": "الترتيب من خلال التصنيفات"
+    },
+    "vm": {
+        "sort": {
+            "name": "الإسم",
+            "price": "السعر",
+            "latest": "ما تم إضافة أخيرا",
+            "reviews": "التعليقات"
+        }
+    },
+    "filter": {
+        "moreFiltration": "المزيد من التصفية ",
+        "customizable": "قابل للتخصيص",
+        "filter": "البحث ",
+        "filterByColor": "البحث عن طريق اللون",
+        "filterByMaterial": "البحث عن طريق الخامة ",
+        "more": "",
+        "less": "",
+        "filterByPrice": "البحث عن طريق السعر "
+    },
+    "nav": {
+        "Hello": "مرحبا",
+        "client_actions":"حركة العملاء",
+        "manage_customers":"ادارة العملاء",
+        "new_customer":"ادخال عميل جديد",
+        "view_details": "عرض التفاصيل",
+        "contact_usq": "تواصل معنا",
+        "stay_connected": "تابعنا",
+        "client_2016": "حركة العملاء 2016",
+        "terms_condition": "الشروط و الأحكام ",
+        "privacy_policy": "سياسة الخصوصية ",
+        "cash_on_delivery": "الدفع عند الإستلام ",
+        "sign_in": "تسجيل الدخول",
+        "registration": "إنشاء حساب جديد",
+        "or": "أو",
+        "arzaq_news_letters": "أريد أن أحصل على أحدث الأخبار عن عروض أرزاق ستورز",
+        "terms_conditions": "مع الضغط على رابط التسجيل يتم الموافقة على الشروط و الأحكام لأرزاق ستورز",
+        "register": "إنشاء عضو جديد",
+        "email": "البريد الإلكتروني",
+        "password": "كلمة السر",
+        "sgin_in": "تسجيل الدخول",
+        "not_a_member_yet?": "لست عضو بعد؟",
+        "sgin_up": "عضو جديد",
+        "my_store": "متجري ",
+        "create_store": "إنشئ متجرك ",
+        "blog": "المدونة",
+        "arabic": "عربي",
+        "english": "English",
+        "show_profile": "عرض حسابي",
+        "my_sales": "مابيعاتي",
+        "my_orders": "طلباتي",
+        "account_settings": "تعديل حسابي",
+        "customer_service": "خدمة عملاء ",
+        "new": "جديد"
+    },
+
+    "listView": {
+        "create": "إنشاء",
+        "edit": "تعديل",
+        "delete": "حذف "
+    },
+    "favorites": {
+        "items": "",
+        "lists": "",
+        "stores": "",
+        "item": "",
+        "unit_price": "",
+        "cart": ""
+    },
+    "{{$item": {
+        "name|localize}}": ""
+    },
+    "shopView": {
+        "addToWishList": "إضافة الى قائمة الأمنيات",
+        "removeFromWishList": "حذم من قائمة الأمنيات"
+    },
+    "p2breview": {
+        "review": "مراجعة",
+        "user": "المستخدم",
+        "name": "الإسم",
+        "action": "الحدث",
+        "view": "عرض"
+    },
+
+    "control": {
+        "choose_file": "إختر ملف",
+        "change_file": "تعديل ملف",
+        "delete": "حذف"
+    },
+    "oAuth": {
+        "connect_with": "الدخل عن طريق ",
+        "register_with": "التسجيل عن طريق"
+    }
+}

@@ -1,0 +1,36 @@
+<navbar id="header"></navbar>
+
+<br/>
+<div class="container">
+    <a href="/contact" class="btn btn-success btn-lg">New Contact</a>
+    <br><br>
+    <table class="table table-hover">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Phone</td>
+            <td>Address</td>
+            <td>Options</td>
+        </tr>
+        <tr ng-repeat="contact in main.contacts ">
+            <td>{{contact.id}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.phone}}</td>
+            <td>{{contact.address}}</td>
+            <td>
+                <a class="btn btn-success btn-lg" ng-click="main.update(contact)" role="button">Edit</a>
+                <a class="btn btn-danger btn-lg" ng-click="main.deleteContact(contact.id)" role="button">x</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<!--<div id="simple">
+    <input ng-init="message='test'" ng-model="message" >
+    <button ng-click="main.callNotify(message);">NOTIFY</button>
+    <p>(you have to click 3 times to see an alert)</p>
+</div>-->
+
+
+<footer></footer>
